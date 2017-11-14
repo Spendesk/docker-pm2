@@ -3,7 +3,7 @@ LABEL maintainer="Keymetrics <contact@keymetrics.io>"
 
 RUN npm install pm2 -g
 
-VOLUME ["/app"]
+RUN mkdir /app
 
 # Expose ports
 EXPOSE 80 443 43554
